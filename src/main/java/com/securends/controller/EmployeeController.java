@@ -22,7 +22,7 @@ public class EmployeeController {
 	
 	@PostMapping("/save")
 	public Employee saveEmployee(@RequestBody Employee employee){
-		
+		System.out.println("Hi");
 		return employeeRepository.save(employee);
 		
 	}
